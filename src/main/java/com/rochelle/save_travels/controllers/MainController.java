@@ -101,7 +101,7 @@ public class MainController {
     putting stuff on my DB -> 2 routes
     -> one to display the form and one to handle the form 
     */
-    // This route shows the form
+    // This route shows the form -> renders the form 
     @GetMapping("/expenses/edit/{id}")
     public String edit(@PathVariable("id")Long id, Model model){
         /* 
@@ -114,9 +114,10 @@ public class MainController {
         return "edit.jsp";
     }
 
-    // This is the route it to handle the edit
+    // This is the route it to handle the edit -> send the expense
     @PutMapping("/expenses/{id}") 
     public String update(@ModelAttribute("expense")Expense expense) {
+        // just make sure to make a different functions name
         expenseService.updateExpense(expense);
         return "redirect:/";
     } 

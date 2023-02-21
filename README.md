@@ -100,6 +100,13 @@ spring.mvc.hiddenmethod.filter.enabled=true
 			<artifactId>bootswatch</artifactId>
 			<version>5.2.3</version>
 		</dependency>
+
+        <!-- & DEPENDENCY FOR USING BCRYPT & -->
+        <!-- <dependency>
+            <groupId>org.mindrot</groupId>
+            <artifactId>jbcrypt</artifactId>
+            <version>0.4</version>
+        </dependency> -->
 ```
 
 
