@@ -116,6 +116,9 @@ public class MainController {
 
     // This is the route it to handle the edit -> send the expense
     @PutMapping("/expenses/{id}") 
+                                        // what is coming from the form 
+                                                // it is an Expense 
+                                                        // call it an expense
     public String update(@ModelAttribute("expense")Expense expense) {
         // just make sure to make a different functions name
         expenseService.updateExpense(expense);

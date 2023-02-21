@@ -55,6 +55,8 @@ public class ExpenseService {
     // ^ UPDATE ^
     // -> method for update
     // controller talks to the service the servive talks to the repository
+    // void because we are not returning anything
+    
     public void updateExpense(Expense expense) {
         /* 
         -> save -> get the same burger from the database 
