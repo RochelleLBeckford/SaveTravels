@@ -63,7 +63,7 @@
                             <input class="btn btn-danger" type="submit" value="Delete">
                         </form>
                     </td>
-                </tr>v
+                </tr>
             
             </c:forEach>
         </tbody>
